@@ -12,8 +12,8 @@ my_ip = ip_request.json()['ip']
 geo_request = requests.get('https://get.geojs.io/v1/ip/geo/' +my_ip + '.json')
 geo_data = geo_request.json()
 
-# Enter your API key here 
-api_key = "KEY"
+# Enter your API key here in the quotes
+api_key = "34da97111101d4ed9b048acbfc010307"
   
 # base_url variable to store url 
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
@@ -43,7 +43,7 @@ if x["cod"] != "404":
     # store the value of "main" 
     # key in variable y 
     y = x["main"] 
-  
+    print(x)
     # store the value corresponding 
     # to the "temp" key of y 
     current_temperature = y["temp"] 
