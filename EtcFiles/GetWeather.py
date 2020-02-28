@@ -13,7 +13,7 @@ geo_request = requests.get('https://get.geojs.io/v1/ip/geo/' +my_ip + '.json')
 geo_data = geo_request.json()
 
 # Enter your API key here in the quotes
-api_key = "34da97111101d4ed9b048acbfc010307"
+api_key = ""
   
 # base_url variable to store url 
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
